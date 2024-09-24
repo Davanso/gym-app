@@ -1,0 +1,64 @@
+* {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;       
+}
+
+/* Estilizando o footer */
+#footer {
+    background-color: #232323; 
+    color: #d3d3d3;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo-image {
+    width: 80px; /* Ajuste conforme necessário */
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    color: #d3d3d3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #00ff00;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 35px; /* Espaçamento entre os ícones sociais */
+}
+
+.social-icon {
+    color: #d3d3d3;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 25px;
+}
+
+.social-icon:hover {
+    color: #00ff00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}

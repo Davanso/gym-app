@@ -1,0 +1,71 @@
+/* Estrutura */
+#menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232323;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    z-index: 10;
+}
+
+.logo-principal {
+    width: 120px; /* Ajuste de tamanho da logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 50px; /* Botões arredondados */
+    background-color: transparent;
+    border: 2px solid #00ff00; /* Adicionando borda */
+    transition: all 0.3s ease; /* Animação suave para várias propriedades */
+}
+
+nav ul li a:hover {
+    background-color: #00ff00; /* Fundo verde ao passar o mouse */
+    color: #232323; /* Texto preto no hover */
+    transform: scale(1.05); /* Leve aumento no hover */
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.3); /* Efeito de sombra no hover */
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    #menu-principal {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+}
